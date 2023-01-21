@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="todo_back_bg"></div>
+    <div class="container">
+      <div class="header">
+        <div class="header_logo">
+          <h3>Todo App</h3>
+        </div>
+
+        <div class="header_search">
+          <input type="text" placeholder="Search" id="search_input" />
+        </div>
+
+        <div class="add_box">
+          <button class="add_todo_btn" id="add_todo_btn">Add Todo</button>
+        </div>
+      </div>
+
+      <div class="content">
+        <h3>Todo App</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Number</th>
+              <th>Created Date</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody class="todo_list"></tbody>
+        </table>
+        <div class="defaultText"></div>
+      </div>
+
+      <div class="add_modal">
+        <div class="modal_back"></div>
+        <div class="modal_form">
+          <header>
+            <h3 id="modal_title">Add Todo</h3>
+            <ion-icon name="close-outline"></ion-icon>
+          </header>
+          <form class="form">
+            <p>
+              <label for="name">Name</label>
+              <input type="text" name="name" placeholder="Name" id="name" />
+            </p>
+            <p>
+              <label for="email">Email</label>
+              <input type="email" name="email" placeholder="Email" id="email" />
+            </p>
+            <p>
+              <label for="phone">Number</label>
+              <input
+                type="number"
+                name="phone"
+                placeholder="Phone"
+                id="phone"
+              />
+            </p>
+            <button type="submit" class="submit add_todo_btn" id="add_todo">
+              Add Todo
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
